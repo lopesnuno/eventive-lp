@@ -1,22 +1,18 @@
 body {
-    font-family: Poppins, Roboto, sans-serif;
     background-color: #000814;
-    padding-left: 60px;
-    padding-right: 60px;
+    font-family: Poppins, Roboto, sans-serif;
+    margin: 0;
+    padding-left: 140px;
+    padding-right: 140px;
     padding-top: 40px;
-    margin: 0;
-}
-
-h1 {
     color: white;
-    margin: 0;
 }
 
-h1, .logo {
+.logo {
     color: #FFC300;
 }
 
-h1, .logo > span {
+.logo > span {
     color: white;
 }
 
@@ -24,13 +20,53 @@ h6 {
     color: white
 }
 
-a {
-    color: white;
+a:link {
+    text-decoration-line: none;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFC300;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.title {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.title > span {
+    color: #FFC300;
+}
+
+.sub-title {
     font-size: 16px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: normal;
-    text-transform: uppercase;
+}
+
+.description-size {
+    max-width: 530px;
 }
 
 .logo {
@@ -39,4 +75,53 @@ a {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.nav-link:any-link {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    color: white;
+}
+
+img {
+    max-width: 580px;
+}
+
+.button-primary {
+    display: inline-flex;
+    padding: 5px 20px;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 10px;
+    background: #FFC300;
+
+    color: #000814;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.button-secondary {
+    display: inline-flex;
+    padding: 5px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background: transparent;
+
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.mt-200 {
+    margin-top: 200px;
 }
