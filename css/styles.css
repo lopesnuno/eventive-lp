@@ -8,6 +8,14 @@ body {
     color: white;
 }
 
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+}
+
 .logo {
     color: #FFC300;
 }
