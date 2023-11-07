@@ -2,8 +2,6 @@ body {
     background-color: #000814;
     font-family: Poppins, Roboto, sans-serif;
     margin: 0;
-    padding-left: 140px;
-    padding-right: 140px;
     padding-top: 40px;
     color: white;
 }
@@ -13,7 +11,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 400px;
+    min-height: 100vh;
 }
 
 .logo {
@@ -132,4 +130,8 @@ img {
 
 .mt-200 {
     margin-top: 200px;
+}
+
+.navbar {
+    padding-inline: 140px;
 }
