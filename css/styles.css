@@ -150,3 +150,7 @@ nav {
 
     transition: background-color 0.3s ease, padding 0.3s ease;
 }
+
+footer > .copyright {
+    background-color: #001121;
+}
