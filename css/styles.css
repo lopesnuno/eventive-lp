@@ -63,6 +63,10 @@ a:link {
     color: #FFC300;
 }
 
+#pricing .title {
+    color: #FFC300;
+}
+
 .title > span {
     color: #FFC300;
 }
@@ -139,7 +143,8 @@ img {
 
 nav {
     padding-inline: 140px;
-    padding-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .sticky-nav {
@@ -193,14 +198,48 @@ p {
     height: auto;
 }
 
+.pricing-box {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.pricing-box .price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 45px;
+    text-align: center;
+    color: white;
+}
+
+.pricing-box .tickets {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 45px;
+    text-align: center;
+    color: white;
+}
+
+.pricing-box h3 {
+    font-size: 24px;
+    margin-bottom: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: white;
+
+}
+
 footer > .copyright {
     background-color: #001121;
 }
 
-/* - Home background image
+
 #home {
-    background-image: url('../img/event_1.png'); !* Adjust the path as necessary *!
-    background-size: cover; !* This will make sure the image covers the entire section *!
-    background-position: center; !* This centers the image in the section *!
-    background-repeat: no-repeat; !* This will prevent the image from repeating *!
-}*/
+    background-image: url('../img/event_1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
