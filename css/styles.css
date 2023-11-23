@@ -63,6 +63,10 @@ a:link {
     color: #FFC300;
 }
 
+#team .title {
+    color: #FFC300;
+}
+
 #pricing .title {
     color: #FFC300;
 }
@@ -76,7 +80,7 @@ a:link {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    color: white;
+    color: #ffffff;
     text-align: left;
 }
 
@@ -112,7 +116,7 @@ img {
     align-items: center;
     border: 0;
     border-radius: 10px;
-    background: #FFC300;
+    background: #ffffff;
 
     color: #000814;
     font-size: 16px;
@@ -127,10 +131,10 @@ img {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    border: 1px solid #FFF;
+    border: 1px solid #ffffff;
     background: transparent;
 
-    color: white;
+    color: #ffffff;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -199,10 +203,10 @@ p {
 }
 
 .pricing-box {
-    padding: 20px;
-    border: 1px solid #ddd;
+    padding: 35px;
+    border: 2px solid #000814;
     border-radius: 10px;
-    margin: 10px 0;
+    margin: 10px 40px;
     text-align: center;
 }
 
@@ -211,7 +215,7 @@ p {
     font-weight: bold;
     margin-bottom: 45px;
     text-align: center;
-    color: white;
+    color: #000814;
 }
 
 .pricing-box .tickets {
@@ -219,7 +223,7 @@ p {
     font-weight: bold;
     margin-bottom: 45px;
     text-align: center;
-    color: white;
+    color: #000814;
 }
 
 .pricing-box h3 {
@@ -228,7 +232,7 @@ p {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    color: white;
+    color: #000814;
 
 }
 
@@ -238,7 +242,7 @@ footer > .copyright {
 
 
 #home {
-    background-image: url('../img/event_1.png');
+    background-image: url('../img/crowd2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
