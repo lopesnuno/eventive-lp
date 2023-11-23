@@ -2,7 +2,10 @@ body {
     background-color: #000814;
     font-family: Poppins, Roboto, sans-serif;
     margin: 0;
-    color: white;
+}
+
+#home {
+    min-height: 100vh;
 }
 
 section {
@@ -10,7 +13,11 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+}
+
+section > .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .logo {
@@ -21,7 +28,7 @@ section {
     color: white;
 }
 
-h6 {
+h6, h4 {
     color: white
 }
 
@@ -57,6 +64,19 @@ a:link {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    color: white;
+}
+
+#about .title {
+    color: #FFC300;
+}
+
+#team .title {
+    color: #FFC300;
+}
+
+#pricing .title {
+    color: #FFC300;
 }
 
 .title > span {
@@ -68,6 +88,8 @@ a:link {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    color: #ffffff;
+    text-align: left;
 }
 
 .description-size {
@@ -102,7 +124,7 @@ img {
     align-items: center;
     border: 0;
     border-radius: 10px;
-    background: #FFC300;
+    background: #ffffff;
 
     color: #000814;
     font-size: 16px;
@@ -117,14 +139,41 @@ img {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    border: 1px solid #FFF;
+    border: 1px solid #ffffff;
     background: transparent;
 
-    color: white;
+    color: #ffffff;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+a.button-primary, a.button-secondary {
+    display: inline-flex;
+    padding: 5px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none; /* Removes the underline */
+    text-align: center;
+    cursor: pointer;
+}
+
+a.button-primary {
+    background: #FFC300;
+    color: #ffffff;
+    border: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+a.button-secondary {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .mt-200 {
@@ -132,8 +181,8 @@ img {
 }
 
 nav {
-    padding-inline: 140px;
-    padding-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .sticky-nav {
@@ -151,6 +200,105 @@ nav {
     transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
+.counters {
+    display: flex;
+    justify-content: space-around;
+}
+
+.counter {
+    margin: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.counter strong {
+    display: block;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background: #FFC300;
+    color: #000814;
+}
+
+.counter span {
+    display: block;
+    background: none;
+    color: #000814;
+    font-size: 16px;
+}
+
+p {
+    text-align: justify;
+}
+
+.phone-image {
+    width: 400px;
+    height: auto;
+}
+
+.pricing-box {
+    padding: 35px;
+    border: 2px solid #000814;
+    border-radius: 10px;
+    margin: 10px 40px;
+    text-align: center;
+}
+
+.pricing-box .price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 45px;
+    text-align: center;
+    color: #000814;
+}
+
+.pricing-box .tickets {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 45px;
+    text-align: center;
+    color: #000814;
+}
+
+.pricing-box h3 {
+    font-size: 24px;
+    margin-bottom: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #000814;
+
+}
+
 footer > .copyright {
     background-color: #001121;
+}
+
+
+#home {
+    background-image: url('../img/crowd2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+@media (min-width: 768px) {
+    section {
+        padding-inline: 140px;
+    }
+
+    nav {
+        padding-inline: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding-inline: 20px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
 }
