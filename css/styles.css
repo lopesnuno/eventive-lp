@@ -2,7 +2,6 @@ body {
     background-color: #000814;
     font-family: Poppins, Roboto, sans-serif;
     margin: 0;
-    color: white;
 }
 
 section {
@@ -57,6 +56,11 @@ a:link {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    color: white;
+}
+
+#about .title {
+    color: #FFC300;
 }
 
 .title > span {
@@ -68,6 +72,8 @@ a:link {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    color: white;
+    text-align: left;
 }
 
 .description-size {
@@ -151,6 +157,50 @@ nav {
     transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
+.counters {
+    display: flex;
+    justify-content: space-around;
+}
+
+.counter {
+    margin: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.counter strong {
+    display: block;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background: #FFC300;
+    color: #000814;
+}
+
+.counter span {
+    display: block;
+    background: none;
+    color: #000814;
+    font-size: 16px;
+}
+
+p {
+    text-align: justify;
+}
+
+.phone-image {
+    width: 400px;
+    height: auto;
+}
+
 footer > .copyright {
     background-color: #001121;
 }
+
+/* - Home background image
+#home {
+    background-image: url('../img/event_1.png'); !* Adjust the path as necessary *!
+    background-size: cover; !* This will make sure the image covers the entire section *!
+    background-position: center; !* This centers the image in the section *!
+    background-repeat: no-repeat; !* This will prevent the image from repeating *!
+}*/
